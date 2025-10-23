@@ -1,3 +1,5 @@
+Download or clone this repo, then run:
+
 # Tenant-wide (enumerates all accessible, enabled subscriptions)
 .\src\Get-ImpactedResources.ps1
 
@@ -10,3 +12,12 @@
 # Change output directory
 .\src\Get-ImpactedResources.ps1 -OutputDirectory "C:\Reports"
 ``
+
+Parameters
+
+-Scope — Tenant (default) | ManagementGroup | Subscriptions
+-ManagementGroupId — when -Scope ManagementGroup
+-SubscriptionIds — one or more subscription IDs when -Scope Subscriptions
+-PageSize — ARG page size (default 1000)
+-OutputDirectory — destination for the Excel (and optional CSVs)
+-AlsoExportCsv — switch to emit CSVs in addition to Excel
