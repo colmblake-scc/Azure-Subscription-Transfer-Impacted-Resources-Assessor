@@ -1,0 +1,12 @@
+# Tenant-wide (enumerates all accessible, enabled subscriptions)
+.\src\Get-ImpactedResources.ps1
+
+# Management group scope
+.\src\Get-ImpactedResources.ps1 -Scope ManagementGroup -ManagementGroupId "contoso-mg"
+
+# Specific subscriptions + also export CSV copies
+.\src\Get-ImpactedResources.ps1 -Scope Subscriptions -SubscriptionIds "00000000-0000-0000-0000-000000000000","11111111-1111-1111-1111-111111111111" -AlsoExportCsv
+
+# Change output directory
+.\src\Get-ImpactedResources.ps1 -OutputDirectory "C:\Reports"
+``
