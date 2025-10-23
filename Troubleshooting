@@ -1,0 +1,6 @@
+“InvalidQuery / UnknownFunction: array_join”
+This repo avoids array_join by using make_set() + tostring() and does JSON parsing in PowerShell.
+RBAC empty or partial
+Ensure your identity has at least Reader at the chosen scope. If directory read is restricted, principalName may be blank—IDs will still be present.
+ImportExcel blocked
+If your environment cannot install from the gallery, install ImportExcel from an approved feed or run with -AlsoExportCsv and use CSVs instead.
