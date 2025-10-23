@@ -1,0 +1,13 @@
+A timestamped Excel workbook (e.g. ImpactedResources_20250101-093000.xlsx) with:
+
+Summary – columns: type, count_
+Details – columns: id, name, type, subscriptionId, resourceGroup, location, identityType, isHnsEnabled, diskEncryptionType, diskKeyUrl, vmHasEncryptionSettings, kvSoftDelete, kvPurgeProtection
+RBAC – columns: scope, scopeLevel, subscriptionId, resourceGroup, principalId, principalType, principalName, roleDefinitionId, roleName
+Networking – mixed records:
+
+PrivateEndpoint rows: peName, peId, vnetId, subnetName, targetId, targetType, dnsZoneId, dnsZoneName, groupIds
+PrivateDnsVnetLink rows: linkName, linkId, vnetId, dnsZoneId, dnsZoneName, registrationEnabled
+
+
+
+Optionally, CSV copies of each tab if -AlsoExportCsv is used.
