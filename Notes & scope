@@ -1,0 +1,5 @@
+The tool focuses on resource types and configurations most likely to be affected by subscription transfers:
+
+  Managed Identity (SystemAssigned), User Assigned Identities, Key Vaults, AKS, SQL Databases, ADLS Gen2 Storage, App Services, VMs/Disks/Snapshots (encryption hints), Synapse, Purview,   Databricks, Event Hub, Service Bus, ACR, Logic Apps, Data Factory, Azure ML, Container Apps, Redis, ADX, Private Endpoints, Private DNS.
+
+Queries are intentionally kept portable (no KQL let/dynamic constants; avoided unsupported functions such as array_join).
